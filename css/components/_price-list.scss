@@ -1,0 +1,26 @@
+.price-list {
+    padding: 51px 0 81px 0;
+    background: linear-gradient(123.15deg, $colorNavy 25.79%, $colorPurple 72.06%);
+    box-shadow: 0px 0px 20px rgba($colorWhite, 0.3);
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    &__heading {
+        color: $colorWhite;
+        line-height: 61px;
+        @include fontSize50px;
+        margin-right: 12px;
+    }
+
+    &__subheading {
+        font-weight: 500;
+        @include fontSize15px;
+        line-height: 18px;
+        color: $colorWhite;
+        margin-bottom: 10px;
+    }
+}

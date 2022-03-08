@@ -1,0 +1,242 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #1A1A1A;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1420px;
+  padding: 0 32px 0 38px;
+  width: 100%;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__heading {
+  text-align: center;
+  line-height: 61px;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 36px 0 80px 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__heading {
+  position: relative;
+}
+
+.header__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 602px;
+      grid-template-columns: 1fr 602px;
+  grid-gap: 96px;
+}
+
+.hero__a {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  width: 180px;
+  text-align: center;
+  line-height: 38px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-right: 30px;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.hero__a:hover {
+  background-color: #FFFFFF;
+  color: #EE8C19;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 157px 0;
+}
+
+.hero__heading {
+  color: #FFFFFF;
+  font-size: 50px;
+  line-height: 61px;
+  padding-bottom: 15px;
+}
+
+.hero__p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-bottom: 33px;
+}
+
+.nav__a {
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.nav__li {
+  max-height: 30px;
+  margin-left: 38px;
+}
+
+.nav__li:last-child {
+  margin-left: 32px;
+}
+
+.nav__line {
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-list {
+  padding: 51px 0 81px 0;
+  background: linear-gradient(123.15deg, #2E158B 25.79%, #531594 72.06%);
+  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+.price-list__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.price-list__heading {
+  color: #FFFFFF;
+  line-height: 61px;
+  font-size: 50px;
+  margin-right: 12px;
+}
+
+.price-list__subheading {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.section {
+  background: linear-gradient(107.81deg, #2E22AB 9.97%, #CF469F 90.03%);
+  padding: 35px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section:after {
+  position: absolute;
+  background-image: url(/img/Intersect.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 1;
+  width: 1920px;
+  height: 547px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -469px;
+  content: '';
+}
+
+.section__arrows {
+  position: absolute;
+  bottom: 58px;
+  left: calc(50% - 20px);
+  z-index: 9;
+  width: 40px;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */

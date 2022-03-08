@@ -1,0 +1,44 @@
+// //Font family
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontLoveYaLikeASister: 'Love Ya Like A Sister', cursive;
+
+// //Font size
+@mixin fontSize15px {
+    font-size: 15px;
+}
+
+@mixin fontSize16px {
+    font-size: 16px;
+}
+
+@mixin fontSize20px {
+    font-size: 20px;
+}
+
+@mixin fontSize26px {
+    font-size: 26px;
+}
+
+@mixin fontSize40px {
+    font-size: 40px;
+}
+
+@mixin fontSize50px {
+    font-size: 50px;
+}
+
+// //Colors
+$colorBlack: #1A1A1A;
+$colorBlue: #2E22AB;
+$colorGray: #4C4C4C;
+$colorNavy: #2E158B;
+$colorOrange: #EE8C19;
+$colorOrangeDark: #F07A13;
+$colorPink: #CF469F;
+$colorPurple: #531594;
+$colorWhite: #FFFFFF;
+$colorYellow: #F3A300;
+
+// //Breakpoints
+$desktop: 1024px;
+$tablet: 768px;

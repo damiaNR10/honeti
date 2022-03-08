@@ -1,0 +1,10 @@
+.about {
+
+    &__heading {
+        text-align: center;
+        line-height: 61px;
+        @include fontSize50px;
+        font-weight: 700;
+        padding: 36px 0 80px 0;
+    }
+}

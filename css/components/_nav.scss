@@ -1,0 +1,29 @@
+.nav {
+
+    &__a {
+        color: $colorWhite;
+        display: inline-block;
+    }
+
+    &__li {
+        max-height: 30px;
+        margin-left: 38px;
+
+        &:last-child {
+            margin-left: 32px;
+        }
+    }
+
+    &__line {
+        display: inline-block;
+        width: 1px;
+        height: 30px;
+        background-color: $colorWhite;
+    }
+
+    &__ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

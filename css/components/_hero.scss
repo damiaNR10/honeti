@@ -1,0 +1,45 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 602px;
+    grid-gap: 96px;
+
+    &__a {
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid $colorWhite;
+        width: 180px;
+        text-align: center;
+        line-height: 38px;
+        background-color: transparent;
+        color: $colorWhite;
+        font-weight: 600;
+        margin-right: 30px;
+        transition: 0.2s ease all;
+
+        &:hover {
+            background-color: $colorWhite;
+            color: $colorOrange;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0 157px 0;
+    }
+
+    &__heading {
+        color: $colorWhite;
+        @include fontSize50px;
+        line-height: 61px;
+        padding-bottom: 15px;
+    }
+
+    &__p {
+        line-height: 24px;
+        @include fontSize16px;
+        color: $colorWhite;
+        padding-bottom: 33px;
+    }
+}
