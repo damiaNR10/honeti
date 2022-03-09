@@ -1,17 +1,15 @@
 .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
 
-    @media screen and (min-width: $tablet) {
-        grid-template-columns: 1fr 350px;
-        grid-gap: 50px;
+    @media(min-width: $tablet) {
+        background-image: url(../img/phone_hand_1-big.png);
+        background-size: 451px 664px;
+        background-repeat: no-repeat;
+        background-position: calc(100% + 110px) calc(100% + 109px);
     }
 
     @media screen and (min-width: $desktop) {
-        grid-template-columns: 1fr 602px;
-        grid-gap: 96px;
-        padding-left: 48px;
+        background-position: calc(100% + 61px) calc(100% + 129px);
+        background-size: 602px 886px;
     }
 
     &__a {
@@ -43,11 +41,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px 0;
+        padding: 30px 0 120px 0;
 
         @media(min-width: $tablet) {
-            padding: 20px 0 157px 0;
+            padding: 120px 0 306px 48px;
+            max-width: 44.1%;
+        }
 
+        @media(min-width: $desktop) {
+            padding: 150px 0 376px 48px;
         }
     }
 

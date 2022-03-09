@@ -36,7 +36,7 @@
         }
 
         &:before {
-            background-image: url(/img/step2.png);
+            background-image: url(../img/step2.png);
             width: 324px;
             height: 600px;
             top: -75px;
@@ -49,9 +49,9 @@
             height: 106px;
             left: 784px;
             top: 70px;
-            background-image: url(/img/arrow1.png);
+            background-image: url(../img/arrow1.png);
 
-            @media screen and (min-width: $bpForArrowRelocate) {
+            @media screen and (min-width: $breakPoint1300px) {
                 top: 155px; 
             }
         }
@@ -65,7 +65,7 @@
         }
 
         &:before {
-            background-image: url(/img/step2.png);
+            background-image: url(../img/step2.png);
             width: 324px;
             height: 600px;
             top: -173px;
@@ -77,7 +77,7 @@
             height: 106px;
             left: -170px;
             top: calc(100% + 14px); 
-            background-image: url(/img/arrow2.png);
+            background-image: url(../img/arrow2.png);
         }
     }
 
@@ -89,7 +89,7 @@
         }
 
         &:before {
-            background-image: url(/img/step3.png);
+            background-image: url(../img/step3.png);
             width: 324px;
             height: 600px;
             top: -89px;
@@ -101,10 +101,10 @@
             height: 119px;
             left: 743px;
             top: 132px; 
-            background-image: url(/img/arrow3.png);
+            background-image: url(../img/arrow3.png);
             transform: rotate(70deg);
 
-            @media screen and (min-width: $bpForArrowRelocate) {
+            @media screen and (min-width: $breakPoint1300px) {
                 transform: rotate(0);
             }
         }
@@ -120,7 +120,7 @@
         }
 
         &:before {
-            background-image: url(/img/step2.png);
+            background-image: url(../img/step2.png);
             width: 324px;
             height: 600px;
             top: 46px;
