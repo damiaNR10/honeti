@@ -523,7 +523,7 @@ ul {
 
 .section:after {
   position: absolute;
-  background-image: url(/img/Intersect.png);
+  background-image: url(../img/Intersect.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -782,7 +782,7 @@ ul {
   top: -40px;
   width: 57px;
   height: 109px;
-  background-image: url(/img/phone_price_list.png);
+  background-image: url(../img/phone_price_list.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
