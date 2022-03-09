@@ -1,0 +1,11 @@
+.burgermenu {
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+
+    &__icon {
+        color: $colorWhite;
+        @include fontSize40px;
+    }
+}

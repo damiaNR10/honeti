@@ -1,10 +1,35 @@
 .about {
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 106px;
+    }
+
+    &__container {
+        overflow: hidden;
+    }
 
     &__heading {
         text-align: center;
         line-height: 61px;
         @include fontSize50px;
         font-weight: 700;
-        padding: 36px 0 80px 0;
+        padding: 20px 0;
+
+        @media screen and (min-width: $desktop) {
+            padding: 36px 0 80px 0;
+        }
+    }
+
+    &__p {
+        font-family: $fontLoveYaLikeASister;
+        font-weight: 400;
+        line-height: 36px;
+        @include fontSize40px;
+        text-align: center;
+        background: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

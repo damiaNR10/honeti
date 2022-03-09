@@ -7,6 +7,11 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
+        padding-bottom: 60px;
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 107px;
+        }
     }
 
     &__heading {

@@ -1,0 +1,187 @@
+.step {
+    position: relative;
+    margin: 0 auto;
+
+    @media screen and (min-width: $desktop) {
+        margin: initial;
+        max-width: 296px;
+    }
+
+    &:after {
+
+        @media screen and (min-width: $desktop) {
+            position: absolute;
+            content: '';
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-width: $desktop) {
+            content: '';
+        }
+    }
+
+    &--first {
+        @media screen and (min-width: $desktop) {
+            padding-left: 400px;
+            margin-bottom: 152px;
+        }
+
+        &:before {
+            background-image: url(/img/step2.png);
+            width: 324px;
+            height: 600px;
+            top: -75px;
+            left: 65px;
+            transform: rotate(-20.93deg);
+        }
+
+        &:after {
+            width: 99px;
+            height: 106px;
+            left: 784px;
+            top: 70px;
+            background-image: url(/img/arrow1.png);
+
+            @media screen and (min-width: $bpForArrowRelocate) {
+                top: 155px; 
+            }
+        }
+    }
+
+    &--second {
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 201px;
+            padding-right: 358px;
+            margin-left: auto;
+        }
+
+        &:before {
+            background-image: url(/img/step2.png);
+            width: 324px;
+            height: 600px;
+            top: -173px;
+            right: 21px;
+        }
+
+        &:after {
+            width: 99px;
+            height: 106px;
+            left: -170px;
+            top: calc(100% + 14px); 
+            background-image: url(/img/arrow2.png);
+        }
+    }
+
+    &--third {
+
+        @media screen and (min-width: $desktop) {
+            padding-left: 400px;
+            margin-bottom: 152px;
+        }
+
+        &:before {
+            background-image: url(/img/step3.png);
+            width: 324px;
+            height: 600px;
+            top: -89px;
+            left: 65px;
+        }
+
+        &:after {
+            width: 152px;
+            height: 119px;
+            left: 743px;
+            top: 132px; 
+            background-image: url(/img/arrow3.png);
+            transform: rotate(70deg);
+
+            @media screen and (min-width: $bpForArrowRelocate) {
+                transform: rotate(0);
+            }
+        }
+    }
+
+    &--fourth {
+        margin-bottom: 40px;
+
+        @media screen and (min-width: $desktop) {
+            margin-left: auto;
+            padding-right: 165px;
+            margin-bottom: 450px;
+        }
+
+        &:before {
+            background-image: url(/img/step2.png);
+            width: 324px;
+            height: 600px;
+            top: 46px;
+            left: -300px;
+            transform: rotate(-75.56deg);
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 20px;
+        position: relative;
+
+        @media screen and (min-width: $desktop) {
+            padding: 0 0 12px 49px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 21px;
+        }
+    }
+
+    &__number {
+        font-family: $fontLoveYaLikeASister;
+        font-weight: normal;
+        @include fontSize70px;
+        line-height: 70px;
+        background: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (min-width: $desktop) {
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+    }
+
+    &__heading {
+        font-family: $fontLoveYaLikeASister;
+        font-weight: normal;
+        @include fontSize26px;
+        line-height: 36px;        
+        background: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    &__p {
+        @include fontSize16px;
+        line-height: 24px;
+        color: $colorGray;
+        font-weight: 400;
+        text-align: center;
+
+        @media screen and (min-width: $desktop) {
+            text-align: initial;
+        }
+    }
+}

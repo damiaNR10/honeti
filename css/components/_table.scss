@@ -1,0 +1,228 @@
+.table {
+    background: $colorWhite;
+    box-shadow: 0px 5px 15px rgba($colorBlack, 0.25);
+    border-radius: 5px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        right: 10px;
+        top: -40px;
+        width: 57px;
+        height: 109px;
+        background-image: url(/img/phone_price_list.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        content: '';
+        z-index: 9;
+
+        @media screen and (min-width: $tablet) {
+            left: 29px;
+            width: 113px;
+            height: 218px;
+            top: -84px;
+        }
+    }
+
+    &__a {
+        width: 100%;
+        line-height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        color: $colorOrangeDark;
+        font-weight: 600;
+        position: relative;
+        margin-right: 0;
+        border: double 1px transparent;
+        background-image: linear-gradient($colorWhite, $colorWhite), 
+                linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+
+        @media screen and (min-width: $tablet) {
+            width: 180px;
+            margin-bottom: 0;
+            margin-right: 24px;
+        }
+
+        &:hover {
+            padding: 0;
+            color: $colorWhite;
+            border: double 1px transparent;
+            background-image: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);            
+            color: $colorWhite;
+        }
+
+        &:first-of-type {
+            margin-bottom: 10px;
+
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content {
+        padding: 23px 30px 33px 30px;
+
+        @media screen and (min-width: $desktop) {
+            padding: 28px 240px 50px 47px;
+        }
+    }
+
+    &__description {
+        padding: 20px;
+        border-top: 1px solid #F5B035;
+        border-bottom: 1px solid #F5B035;
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media screen and (min-width: $tablet) {
+            grid-gap: 50px;
+            padding: 23px 30px 33px 30px;
+            grid-template-columns: 1fr 130px 130px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding: 23px 240px 33px 47px;
+            grid-gap: 125px;
+        }
+    }
+
+    &__h4 {
+        @include fontSize20px;
+        line-height: 24px;
+        background: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__h5 {
+        font-weight: bold;
+        @include fontSize26px;
+        line-height: 30px;
+        text-transform: lowercase;
+        text-align: center;
+    }
+
+    &__h6 {
+        font-weight: bold;
+        @include fontSize20px;
+        line-height: 24px;
+        padding-bottom: 25px;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            text-align: left;
+        }
+    }
+
+    &__header {
+        padding: 20px 75px 20px 20px;
+
+        @media screen and (min-width: $tablet) {
+            padding: 38px 167px 31px 167px;
+        }
+    }
+
+    &__heading {
+        font-weight: bold;
+        @include fontSize40px;
+        line-height: 49px;
+    }
+
+    &__icon {
+        color: $colorAmber;
+        line-height: 40px;
+        @include fontSize16px;
+        position: relative;
+        font-weight: 900;
+
+        &--disable {
+            color: $colorGrayLight;
+        }
+
+        &:before {
+            position: absolute;
+            left: calc(50% - 8px);
+            top: calc(50% - 8px);
+        }
+    }
+
+    &__invisible {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        margin-top: 25px;
+    }
+
+    &__p {
+        color: $colorGray;
+        font-weight: 400;
+        @include fontSize16px;
+        padding: 10px 0;
+        line-height: 20px;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        @media screen and (min-width: $tablet) {
+            width: fit-content;
+            grid-column-end: initial;
+        }
+    }
+
+    &__promo {
+        color: $colorGreen;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            display: grid;
+            grid-gap: 50px;
+            grid-template-columns: 1fr 130px 130px;
+            margin-bottom: 0;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            grid-gap: 125px;
+        }
+    }
+
+    &__subheader {
+        font-weight: bold;
+        @include fontSize20px;
+        line-height: 24px;
+        padding-bottom: 4px;
+    }
+}

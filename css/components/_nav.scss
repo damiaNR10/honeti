@@ -1,29 +1,89 @@
 .nav {
+    display: none;
+    position: absolute;
+    width: 50%;
+    // height: 100%;
+    top: 100%;
+    left: 50%;
+    background-color: rgba($colorWhite, 0.95);
+    border-radius: 10px;
+    z-index: 9;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        position: relative;
+        background: initial;
+        top: initial;
+        left: initial;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    &--active {
+        display: block;
+    }
 
     &__a {
-        color: $colorWhite;
+        color: $colorBlack;
         display: inline-block;
+        width: 100%;
+        @include fontSize26px;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            width: fit-content;
+            @include fontSize15px;
+            color: $colorWhite;
+        }
     }
 
     &__li {
-        max-height: 30px;
-        margin-left: 38px;
+
+        @media screen and (min-width: $tablet) {
+            max-height: 30px;
+            margin-left: 20px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-left: 38px;
+        }
 
         &:last-child {
-            margin-left: 32px;
+
+            @media screen and (min-width: $tablet) {
+                margin-left: 20px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                margin-left: 32px;
+            }
         }
     }
 
     &__line {
-        display: inline-block;
+        display: none;
         width: 1px;
         height: 30px;
         background-color: $colorWhite;
+
+        @media screen and (min-width: $tablet) {
+            display: inline-block;
+            margin-left: 2px;
+        }
     }
 
     &__ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0;
+            grid-gap: 0px;
+        }
     }
 }

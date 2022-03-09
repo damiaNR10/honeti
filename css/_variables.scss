@@ -16,7 +16,11 @@ $fontLoveYaLikeASister: 'Love Ya Like A Sister', cursive;
 }
 
 @mixin fontSize26px {
-    font-size: 26px;
+    font-size: 22px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 26px;
+    }
 }
 
 @mixin fontSize40px {
@@ -24,13 +28,24 @@ $fontLoveYaLikeASister: 'Love Ya Like A Sister', cursive;
 }
 
 @mixin fontSize50px {
-    font-size: 50px;
+    font-size: 36px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 50px;
+    }
+}
+
+@mixin fontSize70px {
+    font-size: 70px;
 }
 
 // //Colors
+$colorAmber: #F5B035;
 $colorBlack: #1A1A1A;
 $colorBlue: #2E22AB;
 $colorGray: #4C4C4C;
+$colorGrayLight: #C3C3C3;
+$colorGreen: #2FA600;
 $colorNavy: #2E158B;
 $colorOrange: #EE8C19;
 $colorOrangeDark: #F07A13;
@@ -40,5 +55,6 @@ $colorWhite: #FFFFFF;
 $colorYellow: #F3A300;
 
 // //Breakpoints
+$bpForArrowRelocate: 1300px;
 $desktop: 1024px;
 $tablet: 768px;
