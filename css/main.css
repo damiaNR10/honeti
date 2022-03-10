@@ -548,7 +548,7 @@ ul {
 
 .step {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -715,6 +715,44 @@ ul {
   }
 }
 
+.step__heading {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
+  background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .step__heading {
+    font-size: 26px;
+  }
+}
+
+.step__img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .step__img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .step__img {
+    display: none;
+  }
+}
+
 .step__number {
   font-family: "Love Ya Like A Sister", cursive;
   font-weight: normal;
@@ -732,25 +770,6 @@ ul {
     position: absolute;
     left: 0;
     top: 8px;
-  }
-}
-
-.step__heading {
-  font-family: "Love Ya Like A Sister", cursive;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 36px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
-  background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-@media screen and (min-width: 768px) {
-  .step__heading {
-    font-size: 26px;
   }
 }
 

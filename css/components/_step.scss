@@ -1,6 +1,10 @@
 .step {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+
+    @media screen and (min-width: $tablet) {
+        
+    }
 
     @media screen and (min-width: $desktop) {
         margin: initial;
@@ -144,6 +148,33 @@
         }
     }
 
+    &__heading {
+        font-family: $fontLoveYaLikeASister;
+        font-weight: normal;
+        @include fontSize26px;
+        line-height: 36px;        
+        background: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    &__img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (min-width: $tablet) {
+            width: 60%;
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: none;
+        }
+    }
+
     &__number {
         font-family: $fontLoveYaLikeASister;
         font-weight: normal;
@@ -159,18 +190,6 @@
             left: 0;
             top: 8px;
         }
-    }
-
-    &__heading {
-        font-family: $fontLoveYaLikeASister;
-        font-weight: normal;
-        @include fontSize26px;
-        line-height: 36px;        
-        background: linear-gradient(180deg, $colorYellow 0%, $colorOrangeDark 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
     }
 
     &__p {
